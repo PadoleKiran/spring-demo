@@ -2,12 +2,16 @@ package com.devgen.School.service;
 
 import com.devgen.School.model.Category;
 import com.devgen.School.model.Product;
+import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+//@Component
+@Service
 public class ProductService {
     private Map<Long, Product> products;
 
@@ -26,7 +30,7 @@ public class ProductService {
     }
 
     public void add(Product product) {
-        products.setId(id);
+//        products.setId(id);
         products.put(id, product);
         id++;
     }
