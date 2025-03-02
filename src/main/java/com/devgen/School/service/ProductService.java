@@ -40,6 +40,7 @@ public class ProductService {
     }
 
     public List<Product> getAll() {
+        System.out.println("Product service get all call.");
         return new ArrayList<>(products.values());
     }
 
